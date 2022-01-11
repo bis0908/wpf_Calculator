@@ -28,7 +28,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="0" Grid.Column="0" Margin="5" FontSize="16" Click="btn_Click">7</Button>
+            <Button x:Name ="button1" Grid.Row="0" Grid.Column="0" Margin="5" FontSize="16" Click="btn_Click">7</Button>
             <Button Grid.Row="0" Grid.Column="1" Margin="5" FontSize="16" Click="btn_Click">8</Button>
             <Button Grid.Row="0" Grid.Column="2" Margin="5" FontSize="16" Click="btn_Click">9</Button>
             <Button Grid.Row="0" Grid.Column="3" Margin="5" FontSize="16" Click="btnOp_Click">+</Button>

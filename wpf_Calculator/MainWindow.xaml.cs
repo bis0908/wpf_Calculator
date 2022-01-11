@@ -8,6 +8,9 @@ namespace wpf_Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool newButton;     // 새로 숫자가 시작되어야 하는 것을 알려주는 flag
+        private char myOperator;    // 현재 계산할 Operator
+        private double savedValue;  // 4칙 연산자를 누르면 txtResult 값을 저장
 
         public MainWindow()
         {
@@ -34,7 +37,7 @@ namespace wpf_Calculator
         {
             Button btn = sender as Button;
 
-            saveValue = double.Parse(txtResult.Text);
+            savedValue = double.Parse(txtResult.Text);
             myOperator = btn.Content.ToString()[0];
             newButton = true;
         }
