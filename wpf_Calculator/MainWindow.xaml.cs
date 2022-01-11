@@ -11,7 +11,6 @@ namespace wpf_Calculator
         private bool newButton;     // 새로 숫자가 시작되어야 하는 것을 알려주는 flag
         private char myOperator;    // 현재 계산할 Operator
         private double savedValue;  // 4칙 연산자를 누르면 txtResult 값을 저장
-        private double num = 0;
         public MainWindow()
         {
             InitializeComponent();
